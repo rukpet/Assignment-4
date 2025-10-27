@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Xml;
+using System.Xml.Schema;
 
 
 
@@ -16,9 +18,9 @@ namespace ConsoleApp1
     public class Program
     {
         // These URLs will be read by the autograder, please keep the variable name un-changed and link to the correct xml/xsd files.
-        public static string xmlURL = "https://www.public.asu.edu/1238603420/Hotels.xml"; //Q1.2
-        public static string xmlErrorURL = "https://www.public.asu.edu/1238603420/HotelsErrors.xml"; //Q1.3
-        public static string xsdURL = "https://www.public.asu.edu/1238603420/Hotels.xsd"; //Q1.1;
+        public static string xmlURL = "https://rukpet.github.io/Assignment-4/ConsoleApp1/Hotels.xml"; //Q1.2
+        public static string xmlErrorURL = "https://rukpet.github.io/Assignment-4/ConsoleApp1/HotelsErrors.xml"; //Q1.3
+        public static string xsdURL = "https://rukpet.github.io/Assignment-4/ConsoleApp1/Hotels.xsd"; //Q1.1;
 
         public static void Main(string[] args)
         {
@@ -37,10 +39,35 @@ namespace ConsoleApp1
         // Q2.1
         public static string Verification(string xmlUrl, string xsdUrl)
         {
+            string result = null;
+            // Create the XmlSchemaSet class .
+            XmlSchemaSet sc = new XmlSchemaSet();
+            // Add the schema to the collection before performing validation
+            sc.Add(null, xsdUrl);
+            // set the validation settings.
+            XmlReaderSettings settings = new XmlReaderSettings();
+            settings.ValidationType = ValidationType.Schema;
+            settings.Schemas = sc;
+            settings.ValidationEventHandler += (object sender, ValidationEventArgs e) =>
+            {
+                result += e.Message;
+            };
+            // Create the XmlReader object.
+            XmlReader reader =
+            XmlReader.Create(xmlUrl, settings);
+            // Parse the file .
+            try
+            {
+                while (reader.Read()) ; // will call event handler if invalid
+                result = "No Error";
+            }
+            catch (Exception)
+            {
 
-
+            }
+            
             //return "No Error" if XML is valid. Otherwise, return the desired exception message.
-            return "No Error";
+            return result;
         }
 
         public static string Xml2Json(string xmlUrl)

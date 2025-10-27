@@ -36,7 +36,7 @@
 
   <xs:simpleType name="StateCode">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[A-Z]{2}"/>
+      <xs:pattern value="[A-Z]{0,2,3}"/>
     </xs:restriction>
   </xs:simpleType>
 
