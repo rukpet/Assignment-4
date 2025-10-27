@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+  <Hotel Rating="4.8">
+    <Name>Premier Palace Hotel</Name>
+    <Phone>+380444448888</Phone>
+    <Phone>+380444441111</Phone>
+    <Address NearestAirport="Boryspil">
+      <Number>5</Number>
+      <Street>T. Shevchenka Blvd</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01004</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.7">
+    <Name>Fairmont Grand Hotel Kyiv</Name>
+    <Phone>+380443220888</Phone>
+    <Address NearestAirport="Boryspil">
+      <Number>1</Number>
+      <Street>Naberezhno-Khreshchatytska St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>04070</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.7">
+    <Name>Hyatt Regency Kyiv</Name>
+    <Phone>+380444811234</Phone>
+    <Address NearestAirport="Boryspil">
+      <Number>5</Number>
+      <Street>Alla Tarasova St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01001</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.6">
+    <Name>InterContinental Kyiv</Name>
+    <Phone>+380444939888</Phone>
+    <Address NearestAirport="Boryspil">
+      <Number>2A</Number>
+      <Street>Velyka Zhytomyrska St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01001</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.6">
+    <Name>Hilton Kyiv</Name>
+    <Phone>+380442005800</Phone>
+    <Address NearestAirport="Boryspil">
+      <Number>30</Number>
+      <Street>Tarasa Shevchenka Blvd</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01030</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.7">
+    <Name>11 Mirrors Design Hotel</Name>
+    <Phone>+380445816111</Phone>
+    <Address NearestAirport="Zhuliany">
+      <Number>34</Number>
+      <Street>Bohdana Khmelnytskoho St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01030</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.6">
+    <Name>Bursa Hotel Kyiv</Name>
+    <Phone>+380444371137</Phone>
+    <Address NearestAirport="Zhuliany">
+      <Number>11</Number>
+      <Street>Kostiantynivska St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>04071</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.5">
+    <Name>Aloft Kyiv</Name>
+    <Phone>+380442277777</Phone>
+    <Address NearestAirport="Zhuliany">
+      <Number>17</Number>
+      <Street>Esplanadna St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01001</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.4">
+    <Name>Park Inn by Radisson Kyiv Troyitska</Name>
+    <Phone>+380445893000</Phone>
+    <Address NearestAirport="Zhuliany">
+      <Number>55</Number>
+      <Street>Velyka Vasylkivska St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>03150</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.3">
+    <Name>ibis Kyiv City Center</Name>
+    <Phone>+380444915000</Phone>
+    <Address NearestAirport="Zhuliany">
+      <Number>6</Number>
+      <Street>Tarasa Shevchenka Blvd</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01004</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.5">
+    <Name>Radisson Blu Hotel Kyiv City Centre</Name>
+    <Phone>+380444928222</Phone>
+    <Address NearestAirport="Boryspil">
+      <Number>22</Number>
+      <Street>Yaroslaviv Val St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01054</Zip>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.6">
+    <Name>Opera Hotel Kyiv</Name>
+    <Phone>+380442008800</Phone>
+    <Address NearestAirport="Boryspil">
+      <Number>53</Number>
+      <Street>B. Khmelnytskoho St</Street>
+      <City>Kyiv</City>
+      <State>Kyiv City</State>
+      <Zip>01054</Zip>
+    </Address>
+  </Hotel>
+</Hotels>
