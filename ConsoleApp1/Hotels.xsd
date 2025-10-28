@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           elementFormDefault="qualified"
-           attributeFormDefault="unqualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			elementFormDefault="qualified"
+			attributeFormDefault="unqualified">
 
-	<xs:element name="Hotels" type="HotelsType">
-		<xs:key name="HotelNameKey">
-			<xs:selector xpath="Hotel"/>
-			<xs:field xpath="Name"/>
-		</xs:key>
-		<xs:unique name="UniquePhonePerHotel">
-			<xs:selector xpath="Hotel"/>
-			<xs:field xpath="Phone"/>
-		</xs:unique>
-	</xs:element>
+	<xsd:element name="Hotels" type="HotelsType">
+		<xsd:key name="HotelNameKey">
+			<xsd:selector xpath="Hotel"/>
+			<xsd:field xpath="Name"/>
+		</xsd:key>
+		<xsd:unique name="UniquePhonePerHotel">
+			<xsd:selector xpath="Hotel"/>
+			<xsd:field xpath="Phone"/>
+		</xsd:unique>
+	</xsd:element>
 
-	<xs:complexType name="HotelsType">
-		<xs:sequence>
-			<xs:element name="Hotel" type="HotelType" minOccurs="1" maxOccurs="unbounded"/>
-		</xs:sequence>
-	</xs:complexType>
+	<xsd:complexType name="HotelsType">
+		<xsd:sequence>
+			<xsd:element name="Hotel" type="HotelType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
 
-	<xs:complexType name="HotelType">
-		<xs:sequence>
-			<xs:element name="Name" type="xs:string"/>
-			<xs:element name="Phone" type="PhoneNumber" minOccurs="1" maxOccurs="unbounded"/>
-			<xs:element name="Address" type="AddressType"/>
-		</xs:sequence>
-		<xs:attribute name="Rating" type="xs:decimal" use="optional"/>
-	</xs:complexType>
+	<xsd:complexType name="HotelType">
+		<xsd:sequence>
+			<xsd:element name="Name" type="xsd:string"/>
+			<xsd:element name="Phone" type="PhoneNumber" minOccurs="1" maxOccurs="unbounded"/>
+			<xsd:element name="Address" type="AddressType"/>
+		</xsd:sequence>
+		<xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
+	</xsd:complexType>
 
-	<xs:complexType name="AddressType">
-		<xs:sequence>
-			<xs:element name="Number" type="xs:positiveInteger"/>
-			<xs:element name="Street" type="xs:string"/>
-			<xs:element name="City" type="xs:string"/>
-			<xs:element name="State" type="StateCode"/>
-			<xs:element name="Zip" type="ZipCode"/>
-		</xs:sequence>
-		<xs:attribute name="NearestAirport" type="xs:string" use="required"/>
-	</xs:complexType>
+	<xsd:complexType name="AddressType">
+		<xsd:sequence>
+			<xsd:element name="Number" type="xsd:positiveInteger"/>
+			<xsd:element name="Street" type="xsd:string"/>
+			<xsd:element name="City" type="xsd:string"/>
+			<xsd:element name="State" type="StateCode"/>
+			<xsd:element name="Zip" type="ZipCode"/>
+		</xsd:sequence>
+		<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+	</xsd:complexType>
 
-	<xs:simpleType name="PhoneNumber">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
-		</xs:restriction>
-	</xs:simpleType>
+	<xsd:simpleType name="PhoneNumber">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 
-	<xs:simpleType name="StateCode">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="[A-Z]{0,2,3}"/>
-		</xs:restriction>
-	</xs:simpleType>
+	<xsd:simpleType name="StateCode">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[A-Z]{0,2,3}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 
-	<xs:simpleType name="ZipCode">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9]{5}"/>
-		</xs:restriction>
-	</xs:simpleType>
+	<xsd:simpleType name="ZipCode">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{5}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 
-</xs:schema>
+</xsd:schema>
