@@ -3,6 +3,7 @@
 			elementFormDefault="qualified"
 			xmlns="http://tempuri.org/Hotels.xsd"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
 	<xsd:element name="Hotels">
 		<xsd:complexType>
 			<xsd:sequence>
