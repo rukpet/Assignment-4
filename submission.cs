@@ -61,9 +61,9 @@ namespace ConsoleApp1
                 while (reader.Read()) ; // will call event handler if invalid
                 result = "No Error";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                result = ex.ToString();
             }
 
             //return "No Error" if XML is valid. Otherwise, return the desired exception message.
