@@ -50,7 +50,7 @@ namespace ConsoleApp1
             settings.Schemas = sc;
             settings.ValidationEventHandler += (object sender, ValidationEventArgs e) =>
             {
-                result += e.Message;
+                result += e.Exception.ToString();
             };
             // Create the XmlReader object.
             XmlReader reader =
