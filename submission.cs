@@ -48,22 +48,22 @@ namespace ConsoleApp1
             XmlReaderSettings settings = new XmlReaderSettings();
             settings.ValidationType = ValidationType.Schema;
             settings.Schemas = sc;
-            settings.ValidationEventHandler += (object sender, ValidationEventArgs e) =>
+            settings.ValidationEventHandler += (sender, e) =>
             {
                 result += e.Exception.ToString();
             };
             // Create the XmlReader object.
             XmlReader reader =
             XmlReader.Create(xmlUrl, settings);
-            // Parse the file .
             try
             {
+                // Parse the file 
                 while (reader.Read()) ; // will call event handler if invalid
                 result = "No Error";
             }
             catch (Exception ex)
             {
-                result = ex.ToString();
+                result = ex.Message;
             }
 
             //return "No Error" if XML is valid. Otherwise, return the desired exception message.
